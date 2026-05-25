@@ -27,11 +27,14 @@ public class GameManager : MonoBehaviour
 
     public void NextLevel()
     {
-
+        Debug.Log("pasamos de nivel");
     }
 
-    public void RestarLevel()
+    public void Restartlevel()
     {
+        Debug.Log("Restart");
+        singleton.currentScore = 0;
+        FindObjectOfType<BallController>().ResetBall();
 
     }
 
